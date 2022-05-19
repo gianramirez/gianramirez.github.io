@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -161,4 +165,40 @@ body {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
+  }
+
+
+  .fakerbutton {
+      text-decoration: none;
+      font-size: 25px;
+      color: #11cdd4;
+      padding: 20px 50px;
+      border: 3px solid #11cdd4;
+      position: relative;
+
+  }
+
+  .fakerbutton::before,
+  .fakerbutton::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: inherit;
+      transition: all .5s;
+  }
+  .fakerbutton::before{
+      top: -15px;
+      left: -15px;
+      border-width: 3px 0 0 3px;
+  }
+  .fakerbutton::after{
+      bottom: -15px;
+      right: -15px;
+      border-width: 0 3px 3px 0;
+  }
+  .fakerbutton:hover::before,
+  .fakerbutton:hover::after{
+      width: calc(100% + 27px);
+      height: calc(100% +27px);
   }
