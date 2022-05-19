@@ -29,7 +29,7 @@ body {
   }
   
   hr {
-    color: #EAF6F6;
+    color: #D6E6F2;
     border-top-style: dotted;
     border-bottom-style: none;
     border-left-style: none;
@@ -40,7 +40,7 @@ body {
   }
   
   .top-container {
-    background-color: #EAF6F6;
+    background-color: ##D6E6F2;
     position: relative;
     padding-top: 10px;
     margin-bottom: 100px;
@@ -63,7 +63,7 @@ body {
     margin-top: 90px;
     padding-bottom: 50px;
     padding-top: 30px;
-    background-color: #66BFBF;
+    background-color: #D6E6F2;
   }
   
   .contact-me {
