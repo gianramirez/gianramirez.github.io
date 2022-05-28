@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #a8a59c
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    /* color: #66BFBF; */
+    color: #ffffff;
+    font-size: 5.625rem;
+    margin-top: 50px auto 0 auto;
+    font-family: 'Kalam', sans-serif;
+
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .115em;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    20% {
+        border-color: #ffffff;
+    }
+}
+
+h2 {
+    /* color: #66BFBF; */
+    color: #060808;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #070a0a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #40514E;
+    line-height: 2;
+}
+
+hr {
+    color: #D6E6F2;
+    border-top-style: dotted;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 10px;
+    width: 90px;
+    height: 10px;
+}
+
+header {
+    padding-bottom: 0%;
+
+}
+
+p {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+table {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.navbar {
+    top: 0;
+}
+
+.navbar a {
+    color: #40514E;
+    padding: 4px 6px;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #66BFBF;
+    color: #ffffff;
+}
+
+.header__nav_list {
+    list-style-type: none;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.top-container {
+    background-image: url(images/beach.jpeg);
+    margin-top: -50px;
+    border-top: 0;
+    padding-top: 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.profile-pic {
+    border-radius: 50%;
+
+}
+
+.profile-me {
+    width: 300px;
+}
+
+.bio-me {
+    width: 30%;
+    margin: auto;
+}
+
+.bio-2 {
+    width: 30%;
+    margin: auto;
+}
+
+.middle-container {
+    margin-bottom: 200px auto;
+    text-align: center;
+}
+
+.bottom-container {
+    margin-top: 90px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: #a8a59c;
+}
+
+.footer-link {
+    color: #a8a59c;
+}
+
+.above-contact {
+    margin-bottom: 50px;
+}
+
+.my-cert {
+    justify-content: baseline;
+    color: #EAF6F6;
+    padding-bottom: 0%;
+}
+
+.first-h2 {
+    color: #ffffff;
+}
+
+.pro {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.top-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.skills {
+    justify-content: space-evenly;
+}
+
+.skill_list_item {
+    list-style-type: none;
+    display: flexbox;
+
+}
+
+.languages_list {
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.ios {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.web {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.cigar {
+    width: 25%;
+    float: left;
+}
+
+.projects {
+    padding-top: 20px;
+}
+
+.projects__column_title {
+    color: #060808;
+}
+
+.project-row {
+    width: 50%;
+    margin: 50px auto 50px auto;
+    line-height: 2;
+}
+
+.skillsused {
+    display: inline-flex;
+    width: 15%;
+}
+
+.contact_icons {
+    justify-content: space-evenly;
+    display: inline-flex;
+    width: 30%;
+}
+
+.links {
+    color: #060808;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 25px;
+    color: #f4fafa;
+    padding: 20px 50px;
+    border: 3px solid #ebf8f8;
+    position: relative;
+
+}
+
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.button::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% +27px);
+}
