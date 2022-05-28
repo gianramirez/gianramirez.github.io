@@ -144,6 +144,7 @@ table {
 .top-container {
     background-image: url(images/beach.jpeg);
     margin-top: -150px;
+    margin-bottom: 10px;
     border-top: 0;
     padding-top: 0;
     text-align: center;
@@ -208,7 +209,7 @@ table {
 
 .top-row {
     width: 50%;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 10px auto;
     text-align: center;
     line-height: 2;
 }
